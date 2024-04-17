@@ -1,0 +1,23 @@
+// .D7-Checkbox {
+//   .ant-checkbox-inner {
+//     @apply w-2.5 h-2.5 rounded-[0.6rem];
+//     &::after {
+//       width: 0.6rem;
+//       height: 1.1rem;
+//     }
+//   }
+// }
+
+// $colors: 'vividTangelo', 'vermilion', 'dodgerBlue', 'minionYellow',
+//   'munsellPurple', 'limeGreen';
+
+// @each $color in $colors {
+//   .D7-Checkbox.#{$color} {
+//     .ant-checkbox-checked .ant-checkbox-inner {
+//       @apply bg-#{$color} border-#{$color};
+//     }
+//     span {
+//       @apply text-1420;
+//     }
+//   }
+// }
