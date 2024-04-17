@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@layer base {
+  img {
+    @apply inline-block;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  color: #252629;
+  font-family: '', sans-serif;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+#root {
+  padding: 0;
+  margin: 0;
+  width: 100vw; 
+  height: 100vh;
+  background-color: theme('colors.blue100');
+}
+
+.Toastify__toast {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.Toastify__progress-bar {
+  background: #5856d6;
+}
+

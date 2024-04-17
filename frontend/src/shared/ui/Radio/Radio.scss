@@ -1,0 +1,31 @@
+$colors: 'vividTangelo', 'vermilion', 'dodgerBlue', 'minionYellow',
+  'munsellPurple', 'limeGreen';
+
+.D7-Radio {
+  .ant-radio-inner {
+    width: 20px;
+    height: 20px;
+  }
+  .ant-radio-checked .ant-radio-inner {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    &::after {
+      width: 32px;
+      height: 32px;
+      margin-inline-start: -16px;
+      margin-block-start: -16px;
+    }
+  }
+}
+
+@each $color in $colors {
+  .D7-Radio.#{$color} {
+    .ant-radio-checked .ant-radio-inner {
+      @apply border-#{$color};
+      &:after {
+        @apply bg-#{$color};
+      }
+    }
+  }
+}

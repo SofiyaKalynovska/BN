@@ -1,0 +1,46 @@
+/* Switch.module.scss */
+
+$colors: 'vividTangelo', 'vermilion', 'dodgerBlue', 'minionYellow',
+  'munsellPurple', 'limeGreen';
+
+.D7-Switch {
+  .ant-switch-checked,
+  .ant-switch {
+    height: 3.2rem;
+    width: 5.6rem;
+  }
+
+  .ant-switch-checked .ant-switch-handle {
+    inset-inline-start: calc(100% - 30px);
+  }
+  .ant-switch-handle {
+    inset-inline-start: 2px;
+    height: 2.8rem;
+    width: 2.8rem;
+    &::before {
+      border-radius: 50%;
+    }
+  }
+  .small {
+    .ant-switch-checked,
+    .ant-switch {
+      height: 2.4rem;
+      width: 4.2rem;
+    }
+    .ant-switch-checked .ant-switch-handle {
+      inset-inline-start: calc(100% - 22px);
+    }
+    .ant-switch-handle {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+}
+
+@each $color in $colors {
+  .D7-Switch {
+    .#{$color}.ant-switch.ant-switch-checked {
+      @apply bg-#{$color};
+    }
+  }
+}
